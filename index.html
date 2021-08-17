@@ -17,28 +17,28 @@
   <body>
     <!--Навигация по сайту-->
 
-    <header class="page-header">
-      <div class="container main-nav"> <!--container__modificator-->
+    <header class="header">
+      <div class="container header__container"> <!--container  container__modificator-->
         <nav class="site-nav">
           <a href="./index.html" class="logo"><span class="logo-blue">Web</span><span class="logo-black">Studio</span></a> <!-- site-nav__logo  site-nav__logo-blue site-nav__logo-black -->
-          <ul class="site-nav list">  <!--site-nav site-nav__list --> ????????
-            <li class="item">   <!--site-nav__item-->
-              <a href="./index.html" class="link current">Студия</a>  <!--site-nav__link   site-nav__link-current  -->
+          <ul class="site-nav__list list">  <!--site-nav site-nav__list -->
+            <li class="site-nav__item">   <!--site-nav__item-->
+              <a href="./index.html" class="site-nav__link  site-nav__link--current">Студия</a>  <!--site-nav__link   site-nav__link-current  -->
             </li>
-            <li class="item">  <!--site-nav__item-->
-              <a href="./portfolio.html" class="link">Портфолио</a>    <!--site-nav__link-->
+            <li class="site-nav__item">  <!--site-nav__item-->
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>    <!--site-nav__link-->
             </li>
-            <li class="item"><a href="#" class="link">Контакты</a></li>   <!--site-nav__item     site-nav__link--->
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>   <!--site-nav__item     site-nav__link--->
           </ul>
         </nav>
         <ul class="nav list"> <!-- contacts-list    contacts-list__list -->
-          <li class="item"> 
-            <a href="mailto:info@devstudio.com" class="contact contacts-icon"><svg width="10" height="16" class="icon">
+          <li class="nav__item"> 
+            <a href="mailto:info@devstudio.com" class="nav__link"><svg width="10" height="16" class="nav__icon">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>info@devstudio.com</a>
           </li>
-          <li class="item">   
-            <a class="contact contacts-icon" href="tel:+380961111111"><svg width="16" height="12" class="icon phone">
+          <li class="nav__item">   
+            <a class="nav__link" href="tel:+380961111111"><svg width="16" height="12" class="nav__icon nav__icon--size">
                 <use href="./images/icons.svg#phone"></use></svg>+38 096 111 11 11</a>
           </li>
         </ul>
@@ -47,58 +47,58 @@
     <main>
       <!--Герой-->
       <section class="hero-section">
-        <h1 class="hero">
+        <h1 class="hero-section__title">
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button data-modal-open type="button" class="button">Заказать услугу</button>
+        <button data-modal-open type="button" class="hero-section__button">Заказать услугу</button>
       </section>
 
       <section class="section">
         <div class="container">
           <!--заголовок который будет скрыт <h2> Наши ценности </h2>-->
-          <ul class="list values-list">
+          <ul class="values list">
             <li class="values-item">
-              <div class="trumb">
+              <div class="holder">
                 <svg width="70px" height="70px">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="values">Внимание к деталям</h3>
-              <p class="values-description">
+              <h3 class="values__title">Внимание к деталям</h3>
+              <p class="values__description">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
             <li class="values-item">
-              <div class="trumb">
+              <div class="holder">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="values">Пунктуальность</h3>
-              <p class="values-description">
+              <h3 class="values__title">Пунктуальность</h3>
+              <p class="values__description">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
             <li class="values-item">
-              <div class="trumb">
+              <div class="holder">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="values">Планирование</h3>
-              <p class="values-description">
+              <h3 class="values__title">Планирование</h3>
+              <p class="values__description">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
             <li class="values-item">
-              <div class="trumb">
+              <div class="holder">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="values">Современные технологии</h3>
-              <p class="values-description">
+              <h3 class="values__title">Современные технологии</h3>
+              <p class="values__description">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
