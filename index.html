@@ -15,23 +15,24 @@
   </head>
 
   <body>
-    <!--Навигация по сайту-->
+
+    <!--header-->
 
     <header class="header">
-      <div class="container header__container"> <!--container  container__modificator-->
+      <div class="container header__container">
         <nav class="site-nav">
-          <a href="./index.html" class="logo"><span class="logo-blue">Web</span><span class="logo-black">Studio</span></a> <!-- site-nav__logo  site-nav__logo-blue site-nav__logo-black -->
-          <ul class="site-nav__list list">  <!--site-nav site-nav__list -->
-            <li class="site-nav__item">   <!--site-nav__item-->
-              <a href="./index.html" class="site-nav__link  site-nav__link--current">Студия</a>  <!--site-nav__link   site-nav__link-current  -->
+          <a href="./index.html" class="logo"><span class="logo-blue">Web</span><span class="logo-black">Studio</span></a>
+          <ul class="site-nav__list list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link  site-nav__link--current">Студия</a>
             </li>
-            <li class="site-nav__item">  <!--site-nav__item-->
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>    <!--site-nav__link-->
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
             </li>
-            <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>   <!--site-nav__item     site-nav__link--->
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="nav list"> <!-- contacts-list    contacts-list__list -->
+        <ul class="nav list">
           <li class="nav__item"> 
             <a href="mailto:info@devstudio.com" class="nav__link"><svg width="10" height="16" class="nav__icon">
                 <use href="./images/icons.svg#envelope"></use>
@@ -45,7 +46,9 @@
       </div>
     </header>
     <main>
-      <!--Герой-->
+
+      <!--hero-->
+
       <section class="hero-section">
         <h1 class="hero-section__title">
           Эффективные решения <br />
@@ -56,7 +59,7 @@
 
       <section class="section">
         <div class="container">
-          <!--заголовок который будет скрыт <h2> Наши ценности </h2>-->
+          <!--the title to be hidden <h2> Наши ценности </h2> -->
           <ul class="values list">
             <li class="values__item">
               <div class="holder">
@@ -105,7 +108,9 @@
           </ul>
         </div>
       </section>
-      <!--Чем мы занимаемся-->
+
+      <!--What are we doing-->
+
       <section class="section-list">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
@@ -143,7 +148,9 @@
           </ul>
         </div>
       </section>
-      <!--Наша команда-->
+
+      <!--our team-->
+
       <section class="team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
@@ -290,7 +297,9 @@
             </li>
           </ul>
         </div>
-        <!--Постоянные клиенты-->
+
+        <!--regular customers-->
+
       </section>
       <section class="section">
         <div class="container">
@@ -338,9 +347,11 @@
         </div>
       </section>
     </main>
-    <!--Футер-->
+
+    <!--footer-->
+
     <footer class="footer">
-      <div class="container footer__container">
+      <div class="footer__container container ">
         <div>
           <a href="./index.html" class="footer__logo"><span class="logo-blue">Web</span><span class="logo-white">Studio</span></a>
           <address>
@@ -357,6 +368,9 @@
             </ul>
           </address>
         </div>
+
+        <!--list of social networks-->
+
         <div class="join-block">
           <h3 class="join-block__title">Присоеденяйтесь</h3>
 
@@ -364,8 +378,7 @@
             <li>
               <a href="#" class="join-list__item"
                 ><svg width="20" height="20" class="join-list__network">
-                  <use href="./images/icons.svg#instagram"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#instagram"></use></svg></a>
             </li>
             <li>
               <a href="#" class="join-list__item"
@@ -387,21 +400,22 @@
             </li>
           </ul>
         </div>
-        
+
+        <!--subscription form-->
+
           <form  class="form">
               <h3 class="form__title">Подпишитесь на рассылку</h3>
-              
               <input type="email" id="mail" placeholder="E-mail" class="form__input-mail"/>
               <button type="submit" class="subscribe-btn">Подписаться
                 <svg width="24" height="24" class="subscribe-btn__icon">
                   <use href="./images/icons.svg#icon-send"></use></svg>
               </button>
-              
-            
-          </form>
-        
-      </div>
+              </form>
+            </div>
     </footer>
+
+    <!--backdrop-->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close type="button" class="modal__btn">
@@ -410,11 +424,11 @@
           </svg>
         </button>
 
-        <form class="modal-form" autocomplete="off">
+        <!--modal-form-->
+
+ <form class="modal-form" autocomplete="off">
           <b class="modal-form__title">Оставьте свои данные, мы вам перезвоним</b>
-
-
-              <div class="modal-form__box">
+        <div class="modal-form__box">
                 <label for="name" class="modal-form__label">Имя</label>
                 <div class="modal-form__input-box">
             <input type="text" name="name" id="name" class="modal__form-input" required />
@@ -423,8 +437,7 @@
             </svg>
               </div>
           </div>
-             
-          <div class=".modal-form__box">
+             <div class=".modal-form__box">
             <label for="phone" class="modal-form__label">Телефон</label>
             <div class="modal-form__input-box">
             <input type="tel" name="phone" id="phone" autocomplete="on" class="modal__form-input" required  />
@@ -432,8 +445,7 @@
               <use href="./images/icons.svg#phone-black"></use>
             </svg>
           </div>
-        </div>
-           
+        </div> 
         <div class="modal-form__box">
             <label for="submit-mail" class="modal-form__label">Почта</label>
             <div class="modal-form__input-box">
@@ -443,18 +455,14 @@
               </svg>
             </div>
         </div>
-           
-          <label for="modal-form__comment" class="modal-form__label">Комментарий</label>
+            <label for="modal-form__comment" class="modal-form__label">Комментарий</label>
           <textarea name="textinput" id="modal-form__comment"  placeholder="Введите текст" class="modal-form__comment "></textarea>
-        
-
-          <div class="checkbox">
+        <div class="checkbox">
             <label for="policy" class="checkbox__сontract">
             <input class="checkbox__hidden" type="checkbox" value="policy" name="contract" id="policy" />
             <span class="checkbox__icon"> 
             </span> Соглашаюсь с рассылкой и принимаю &nbsp <a href="#" class="checkbox__link">Условия договора </a></label>
-         
-        </div>
+         </div>
           <button class="submit-btn" type="submit">Отправить</button>
         </form>
       </div>
