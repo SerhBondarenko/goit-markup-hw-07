@@ -362,38 +362,38 @@
 
           <ul class="join-list list">
             <li>
-              <a href="#" class="join-item"
-                ><svg width="20" height="20" class="join-network">
+              <a href="#" class="join-list__item"
+                ><svg width="20" height="20" class="join-list__network">
                   <use href="./images/icons.svg#instagram"></use></svg
               ></a>
             </li>
             <li>
-              <a href="#" class="join-item"
-                ><svg width="20" height="20" class="join-network">
+              <a href="#" class="join-list__item"
+                ><svg width="20" height="20" class="join-list__network">
                   <use href="./images/icons.svg#twitter"></use></svg
               ></a>
             </li>
             <li>
-              <a href="#" class="join-item"
-                ><svg width="20" height="20" class="join-network">
+              <a href="#" class="join-list__item"
+                ><svg width="20" height="20" class="join-list__network">
                   <use href="./images/icons.svg#facebook"></use></svg
               ></a>
             </li>
             <li>
-              <a href="#" class="join-item"
-                ><svg width="20" height="20" class="join-network">
+              <a href="#" class="join-list__item"
+                ><svg width="20" height="20" class="join-list__network">
                   <use href="./images/icons.svg#linkedin"></use></svg
               ></a>
             </li>
           </ul>
         </div>
         
-          <form  class="form-field">
-              <h3 class="subscribe">Подпишитесь на рассылку</h3>
+          <form  class="form">
+              <h3 class="form__title">Подпишитесь на рассылку</h3>
               
-              <input type="email" id="mail" placeholder="E-mail" class="input-mail"/>
+              <input type="email" id="mail" placeholder="E-mail" class="form__input-mail"/>
               <button type="submit" class="subscribe-btn">Подписаться
-                <svg width="24" height="24" class="icon-send">
+                <svg width="24" height="24" class="subscribe-btn__icon">
                   <use href="./images/icons.svg#icon-send"></use></svg>
               </button>
               
@@ -404,55 +404,55 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close type="button" class="close-btn">
+        <button data-modal-close type="button" class="modal__btn">
           <svg width="18" height="18">
             <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
 
         <form class="modal-form" autocomplete="off">
-          <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+          <b class="modal-form__title">Оставьте свои данные, мы вам перезвоним</b>
 
 
-              <div class=".name-icon">
-                <label for="name" class="form-label">Имя</label>
-                <div class="input-box">
-            <input type="text" name="name" id="name" class="form-input" required />
-            <svg width="18" height="18" class="name-svg-icon">
+              <div class="modal-form__box">
+                <label for="name" class="modal-form__label">Имя</label>
+                <div class="modal-form__input-box">
+            <input type="text" name="name" id="name" class="modal__form-input" required />
+            <svg width="18" height="18" class="modal-form__icon">
               <use href="./images/icons.svg#name-black"></use>
             </svg>
               </div>
           </div>
              
-          <div class=".name-icon">
-            <label for="phone" class="form-label">Телефон</label>
-            <div class="input-box">
-            <input type="tel" name="phone" id="phone" autocomplete="on" class="form-input" required  />
-            <svg width="18" height="18" class="name-svg-icon">
+          <div class=".modal-form__box">
+            <label for="phone" class="modal-form__label">Телефон</label>
+            <div class="modal-form__input-box">
+            <input type="tel" name="phone" id="phone" autocomplete="on" class="modal__form-input" required  />
+            <svg width="18" height="18" class="modal-form__icon">
               <use href="./images/icons.svg#phone-black"></use>
             </svg>
           </div>
         </div>
            
-        <div class=".name-icon">
-            <label for="submit-mail" class="form-label">Почта</label>
-            <div class="input-box">
-            <input type="email" name="submit-mail "id="submit-mail" autocomplete="on" class="form-input"/>
-              <svg width="18" height="18" class="name-svg-icon">
+        <div class="modal-form__box">
+            <label for="submit-mail" class="modal-form__label">Почта</label>
+            <div class="modal-form__input-box">
+            <input type="email" name="submit-mail "id="submit-mail" autocomplete="on" class="modal__form-input"/>
+              <svg width="18" height="18" class="modal-form__icon">
                 <use href="./images/icons.svg#email-black"></use>
               </svg>
             </div>
         </div>
            
-          <label for="comment" class="form-label">Комментарий</label>
-          <textarea name="textinput" id="comment"  placeholder="Введите текст" class="comment "></textarea>
+          <label for="modal-form__comment" class="modal-form__label">Комментарий</label>
+          <textarea name="textinput" id="modal-form__comment"  placeholder="Введите текст" class="modal-form__comment "></textarea>
         
 
           <div class="checkbox">
-            <label for="policy" class="сontract">
-            <input class="checkbox-hidden" type="checkbox" value="policy" name="contract" id="policy" />
-            <span class="checkbox-icon"> 
-            </span> Соглашаюсь с рассылкой и принимаю &nbsp <a href="#" class="contract-link">Условия договора </a></label>
+            <label for="policy" class="checkbox__сontract">
+            <input class="checkbox__hidden" type="checkbox" value="policy" name="contract" id="policy" />
+            <span class="checkbox__icon"> 
+            </span> Соглашаюсь с рассылкой и принимаю &nbsp <a href="#" class="checkbox__link">Условия договора </a></label>
          
         </div>
           <button class="submit-btn" type="submit">Отправить</button>
