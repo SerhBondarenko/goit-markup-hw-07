@@ -1,11 +1,8 @@
 .business {
   display: flex;
-
-  
-& .business__list + .business__list {
-  margin-left: 30px;
 }
-
+.business .business__list + .business__list {
+  margin-left: 30px;
 }
 .business__link {
   position: relative;

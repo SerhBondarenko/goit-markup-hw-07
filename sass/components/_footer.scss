@@ -29,6 +29,9 @@ address a {
 
 .footer__inform {
   font-style: normal;
+  & :last-child {
+    padding-bottom: 0;
+  }
 }
 
 .footer__location {
@@ -48,20 +51,14 @@ address a {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
-
-.footer__contact-info:hover,
-.footer__contact-info:focus {
-  color: $accent-color;
-}
-
 .footer__contact {
   margin-bottom: 9px;
 }
-.footer__inform :last-child {
-  padding-bottom: 0;
-}
-
 /*footer join-block*/
 
 .join-block__title {
@@ -102,12 +99,12 @@ address a {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
-.join-list__item:hover,
-.join-list__item:focus {
-  background-color: $accent-color;
-}
 .join-list__network {
   fill: $white-color;
 }
@@ -172,7 +169,6 @@ address a {
   right: 28px;
   transform: translateY(-50%);
 }
-
 input::placeholder {
   font-weight: normal;
   font-size: 16px;
